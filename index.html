@@ -1,299 +1,154 @@
-<!doctype html>
-<html lang="it" class="no-js">
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Robert-Cristian Mocanu | Portfolio</title>
-  <meta name="description" content="Portfolio di Robert-Cristian Mocanu: sviluppo di interfacce web ad alte prestazioni, automazione e dati.">
-  <meta name="author" content="Robert-Cristian Mocanu">
-  <meta name="theme-color" content="#0A1433">
-  <meta property="og:title" content="Robert-Cristian Mocanu | Portfolio">
-  <meta property="og:description" content="Sviluppo di interfacce web ad alte prestazioni, automazione e dati.">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.classList.remove('no-js');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mocanu — Design &amp; Sviluppo</title>
+  <meta name="description" content="Mocanu — studio di design e sviluppo web. Esperienze digitali curate, performanti ed eleganti." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip" href="#contenuto">Vai al contenuto</a>
 
-  <header class="site-header">
-    <div class="wrap site-header__bar">
-      <a class="brand" href="#home" aria-label="Robert-Cristian Mocanu, inizio pagina">
-        <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="14" fill="#0C0C0C"/>
-          <path d="M16 22l14 10-14 10" fill="none" stroke="#6EA8FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M36 44h16" stroke="#FFD166" stroke-width="6" stroke-linecap="round"/>
-        </svg>
-        <span>Mocanu</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
-        <span class="sr-only">Menu</span>
-        <span class="nav-toggle__bars" aria-hidden="true"></span>
-      </button>
-      <nav class="nav" id="menu" aria-label="Principale">
-        <a href="#approccio">Approccio</a>
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">Mocanu<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#design">Design</a>
         <a href="#progetti">Progetti</a>
-        <a href="#servizi">Servizi</a>
-        <a href="#credenziali">Credenziali</a>
+        <a href="#numeri">Numeri</a>
         <a href="#contatti">Contatti</a>
       </nav>
+      <a href="#contatti" class="nav-cta">Iniziamo</a>
     </div>
-    <div class="progress" aria-hidden="true"></div>
   </header>
 
-  <main id="contenuto">
+  <!-- HERO + LAPTOP 3D -->
+  <section class="hero" id="top">
+    <div class="hero-glow"></div>
+    <p class="hero-kicker reveal">Design &middot; Sviluppo &middot; Dettaglio</p>
+    <h1 class="hero-title">
+      <span class="line"><span>Creiamo esperienze</span></span>
+      <span class="line"><span>che <em>sembrano</em> magiche.</span></span>
+    </h1>
+    <p class="hero-sub reveal">Uno studio indipendente che unisce estetica e ingegneria.
+      Ogni pixel ha uno scopo, ogni interazione una ragione.</p>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="wrap hero__grid">
-        <div class="hero__copy">
-          <p class="hero__role">Ingegneria del Software</p>
-          <h1>Sviluppo interfacce web ad alte prestazioni.</h1>
-          <p class="lead">Mi occupo di applicazioni web minimaliste, ottimizzazione delle performance e architetture cloud efficienti.</p>
-          <div class="actions">
-            <a class="btn btn--primary" href="#progetti">Esplora i progetti</a>
-            <a class="btn" href="#contatti">Contattami</a>
-          </div>
-        </div>
-
-        <div class="console" aria-hidden="true">
-          <div class="console__bar">
-            <span class="console__title">Prompt dei comandi</span>
-            <span class="console__ctrl"><span>&#8211;</span><span>&#9633;</span><span>&#215;</span></span>
-          </div>
-          <div class="console__body" data-console-body>
-            <p data-kind="cmd"><span class="prompt">C:\Users\mocanu&gt;</span> <span class="typed">whoami</span></p>
-            <p data-kind="out">robert-cristian-mocanu</p>
-            <p data-kind="cmd"><span class="prompt">C:\Users\mocanu&gt;</span> <span class="typed">stack --list</span></p>
-            <p data-kind="out"><span class="hl">python</span>  <span class="hl">javascript</span>  html/css  flask  sql  git</p>
-            <p data-kind="cmd"><span class="prompt">C:\Users\mocanu&gt;</span> <span class="typed">start frontend.exe</span></p>
-            <p data-kind="out">Avvio interfaccia... <span class="ok">fatto</span></p>
-            <p data-kind="idle"><span class="prompt">C:\Users\mocanu&gt;</span> <span class="typed"></span><span class="cursor"></span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- APPROCCIO -->
-    <section class="section" id="approccio" aria-labelledby="approccio-titolo">
-      <div class="wrap split">
-        <div class="section__intro">
-          <h2 id="approccio-titolo">Logica e Design.</h2>
-          <p class="subtitle">Dal terminale al frontend interattivo.</p>
-          <p>L'efficienza deve essere invisibile all'utente, ma tangibile nelle metriche. Il mio percorso va dall'ottimizzazione di script di sistema su CMD alla creazione di architetture web fluide, scalabili e minimali.</p>
-        </div>
-        <div>
-          <h3 class="sr-only">Tecnologie</h3>
-          <ul class="stack">
-            <li><span>Python</span></li>
-            <li><span>JavaScript</span></li>
-            <li><span>HTML/CSS</span></li>
-            <li><span>Flask</span></li>
-            <li><span>SQL</span></li>
-            <li><span>Git / CLI</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROGETTI -->
-    <section class="section section--alt" id="progetti" aria-labelledby="progetti-titolo">
-      <div class="wrap">
-        <div class="section__intro section__intro--wide">
-          <h2 id="progetti-titolo">Progetti recenti</h2>
-          <p>Una selezione di lavori centrati su codice pulito, esperienza utente fluida e caricamento veloce.</p>
-        </div>
-
-        <ul class="dir">
-          <li class="dir__item is-open">
-            <button class="dir__head" type="button" aria-expanded="true" aria-controls="p1">
-              <span class="dir__name">GitHub Profile</span>
-              <span class="dir__kind">Top project</span>
-              <span class="dir__icon" aria-hidden="true"></span>
-            </button>
-            <div class="dir__panel" id="p1">
-              <div>
-                <div class="dir__body">
-                  <p>L'hub principale: script in Batch, Python e progetti web. Il centro della mia produzione digitale e dei miei contributi open source.</p>
-                  <p class="meta"><span>Tecnologie</span> Batch, Python, Web</p>
-                  <p><a class="btn" href="https://github.com/mrcristian2009" target="_blank" rel="noopener">Esplora il codice su GitHub</a></p>
-                </div>
+    <div class="laptop-stage" id="laptopStage">
+      <div class="laptop" id="laptop">
+        <div class="lid">
+          <div class="screen">
+            <div class="screen-ui">
+              <div class="ui-bar"><i></i><i></i><i></i><span>mocanu.studio</span></div>
+              <div class="ui-hero">
+                <div class="ui-title"></div>
+                <div class="ui-line w70"></div>
+                <div class="ui-line w45"></div>
+                <div class="ui-btn"></div>
+              </div>
+              <div class="ui-grid">
+                <div></div><div></div><div></div>
               </div>
             </div>
-          </li>
-
-          <li class="dir__item">
-            <button class="dir__head" type="button" aria-expanded="false" aria-controls="p2">
-              <span class="dir__name">CMD Tools</span>
-              <span class="dir__kind">Automation</span>
-              <span class="dir__icon" aria-hidden="true"></span>
-            </button>
-            <div class="dir__panel" id="p2">
-              <div>
-                <div class="dir__body">
-                  <p>Raccolta di file batch per ottimizzare il sistema Windows e automatizzare i task ripetitivi.</p>
-                  <p class="meta"><span>Tecnologie</span> Batch</p>
-                  <p><a class="btn" href="https://github.com/mrcristian2009" target="_blank" rel="noopener">Vedi il repository</a></p>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="dir__item">
-            <button class="dir__head" type="button" aria-expanded="false" aria-controls="p3">
-              <span class="dir__name">Apple Theme v2</span>
-              <span class="dir__kind">Web design</span>
-              <span class="dir__icon" aria-hidden="true"></span>
-            </button>
-            <div class="dir__panel" id="p3">
-              <div>
-                <div class="dir__body">
-                  <p>Studio di interfacce scure e performanti, basate sulle linee guida di Cupertino.</p>
-                  <p><span class="btn" aria-disabled="true">Presto online</span></p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-
-        <div class="repo-band">
-          <p>Codice sorgente, script di automazione e infrastrutture open source.</p>
-          <a class="btn btn--primary" href="https://github.com/mrcristian2009" target="_blank" rel="noopener">Tutti i repository su GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVIZI -->
-    <section class="section" id="servizi" aria-labelledby="servizi-titolo">
-      <div class="wrap">
-        <div class="section__intro section__intro--wide">
-          <h2 id="servizi-titolo">Servizi</h2>
-        </div>
-
-        <div class="services">
-          <article>
-            <h3>Sviluppo web</h3>
-            <p>Siti statici, landing page e architetture web rapide, senza infrastrutture pesanti. Il codice è scritto per l'indicizzazione sui motori di ricerca e per l'esperienza utente.</p>
-          </article>
-          <article>
-            <h3>Automazione e dati</h3>
-            <p>Logiche applicative in Python, database relazionali SQL e microservizi REST per collegare i sistemi e automatizzare i flussi di lavoro.</p>
-          </article>
-        </div>
-
-        <div class="compare" data-compare>
-          <h3>Trasparenza tecnica</h3>
-          <p class="compare__lead">Il confronto con le piattaforme standard come Wix e WordPress.</p>
-          <table class="compare__table">
-            <caption class="sr-only">Confronto tra il mio approccio e Wix o WordPress</caption>
-            <thead>
-              <tr>
-                <th scope="col"><span class="sr-only">Criterio</span></th>
-                <th scope="col">Il mio approccio</th>
-                <th scope="col">Wix e WordPress</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="--i:0">
-                <th scope="row">Velocità (Lighthouse)</th>
-                <td data-label="Il mio approccio">
-                  <span class="val">100/100</span>
-                  <span class="bar" aria-hidden="true"><i style="--from:0;--to:100"></i></span>
-                </td>
-                <td data-label="Wix e WordPress">
-                  <span class="val">40–60</span>
-                  <span class="bar bar--muted" aria-hidden="true"><i style="--from:40;--to:60"></i></span>
-                </td>
-              </tr>
-              <tr style="--i:1">
-                <th scope="row">Costi di hosting mensili</th>
-                <td data-label="Il mio approccio">
-                  <span class="val">€0 <small>static cloud</small></span>
-                  <span class="bar" aria-hidden="true"><i style="--from:0;--to:2"></i></span>
-                </td>
-                <td data-label="Wix e WordPress">
-                  <span class="val">€15–€30</span>
-                  <span class="bar bar--muted" aria-hidden="true"><i style="--from:50;--to:100"></i></span>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Proprietà del dominio</th>
-                <td data-label="Il mio approccio"><span class="val">Sempre del cliente</span></td>
-                <td data-label="Wix e WordPress"><span class="val">Spesso vincolata</span></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="compare__note">Valori indicativi.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CREDENZIALI -->
-    <section class="section section--alt" id="credenziali" aria-labelledby="credenziali-titolo">
-      <div class="wrap split">
-        <div class="section__intro">
-          <h2 id="credenziali-titolo">Credenziali</h2>
-          <p>I documenti sono in formato PDF, conservati in una cartella Google Drive protetta e aggiornati costantemente.</p>
-          <p><a class="btn btn--primary" href="https://drive.google.com/drive/folders/1wp-I3X5E8MofPBBlObKPNB-0mQ2lw5B5?usp=sharing" target="_blank" rel="noopener">Apri Google Drive</a></p>
-        </div>
-        <ul class="docs">
-          <li>Risultati INVALSI</li>
-          <li>Attestati PCTO</li>
-          <li>Certificazioni accademiche ufficiali</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CONTATTI -->
-    <section class="section" id="contatti" aria-labelledby="contatti-titolo">
-      <div class="wrap split">
-        <div class="section__intro">
-          <h2 id="contatti-titolo">Contatti</h2>
-          <p>Per richieste e collaborazioni, usa il modulo qui accanto.</p>
-          <p class="status"><span class="status__dot" aria-hidden="true"></span>Disponibile</p>
-          <p><a class="btn" href="https://mrcristian.vercel.app/CV_Robert_Cristian_Mocanu.pdf" target="_blank" rel="noopener">Scarica il CV (PDF)</a></p>
-        </div>
-
-        <form class="form" data-form novalidate>
-          <div class="field">
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" autocomplete="name" required>
+            <div class="screen-glare"></div>
           </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
+          <div class="lid-back"></div>
+        </div>
+        <div class="base">
+          <div class="keyboard">
+            <div class="keys"></div>
+            <div class="trackpad"></div>
           </div>
-          <div class="field">
-            <label for="messaggio">Messaggio</label>
-            <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
-          </div>
-          <div class="field field--trap" aria-hidden="true">
-            <label for="website">Non compilare questo campo</label>
-            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
-          </div>
-          <label class="check">
-            <input type="checkbox" name="privacy" required>
-            <span>Acconsento al trattamento dei dati personali secondo la <a href="https://mrcristian.vercel.app/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span>
-          </label>
-          <button class="btn btn--primary" type="submit">Invia richiesta</button>
-          <p class="form__status" role="status" aria-live="polite"></p>
-        </form>
+          <div class="base-front"></div>
+        </div>
+        <div class="shadow"></div>
       </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap site-footer__bar">
-      <p>&copy; 2026 Robert-Cristian Mocanu. Tutti i diritti riservati.</p>
-      <p>Solo cookie tecnici. <a href="https://mrcristian.vercel.app/privacy.html" target="_blank" rel="noopener">Privacy Policy</a></p>
     </div>
-  </footer>
 
-  <script src="js/main.js" defer></script>
+    <div class="scroll-hint" aria-hidden="true"><span></span>Scorri</div>
+  </section>
+
+  <!-- DESIGN / FEATURES -->
+  <section class="section" id="design">
+    <p class="section-kicker reveal">Il metodo</p>
+    <h2 class="section-title reveal">Pochi elementi.<br/>Eseguiti alla perfezione.</h2>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-icon">&#9673;</div>
+        <h3>Design essenziale</h3>
+        <p>Riduciamo finché resta solo l'indispensabile. Il risultato è un'interfaccia che respira e guida lo sguardo.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">&#9889;</div>
+        <h3>Performance ossessive</h3>
+        <p>Ottimizziamo ogni millisecondo: caricamento istantaneo, animazioni fluide a 60fps, zero distrazioni.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">&#10022;</div>
+        <h3>Dettaglio artigianale</h3>
+        <p>Micro-interazioni, tipografia calibrata e spaziatura precisa. È lì che si riconosce la qualità.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROGETTI / HORIZONTAL -->
+  <section class="section wide" id="progetti">
+    <p class="section-kicker reveal">Lavori selezionati</p>
+    <h2 class="section-title reveal">Progetti di cui andiamo fieri.</h2>
+    <div class="work-row">
+      <article class="work reveal">
+        <div class="work-visual v1"></div>
+        <h3>Aurora Commerce</h3>
+        <p>E-commerce moda — +142% conversione</p>
+      </article>
+      <article class="work reveal">
+        <div class="work-visual v2"></div>
+        <h3>Nordwind Bank</h3>
+        <p>Fintech — redesign completo dell'app</p>
+      </article>
+      <article class="work reveal">
+        <div class="work-visual v3"></div>
+        <h3>Atelier Verde</h3>
+        <p>Brand identity + sito vetrina</p>
+      </article>
+      <article class="work reveal">
+        <div class="work-visual v4"></div>
+        <h3>Pulse Health</h3>
+        <p>Piattaforma sanitaria — design system</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- NUMERI -->
+  <section class="section stats" id="numeri">
+    <div class="stat reveal"><strong data-count="87">0</strong><span>progetti consegnati</span></div>
+    <div class="stat reveal"><strong data-count="12">0</strong><span>premi di design</span></div>
+    <div class="stat reveal"><strong data-count="99">0</strong><span>% clienti soddisfatti</span></div>
+    <div class="stat reveal"><strong data-count="9">0</strong><span>anni di esperienza</span></div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="section quote-section">
+    <blockquote class="reveal">
+      &laquo;Hanno trasformato il nostro sito in un'esperienza che i clienti ricordano.
+      Professionalità rara.&raquo;
+      <cite>— Elena R., CEO Aurora Commerce</cite>
+    </blockquote>
+  </section>
+
+  <!-- CTA / FOOTER -->
+  <section class="section cta" id="contatti">
+    <h2 class="reveal">Hai un progetto in mente?</h2>
+    <p class="reveal">Parliamone. Rispondiamo entro 24 ore.</p>
+    <a class="btn-primary reveal" href="mailto:hello@mocanu.studio">hello@mocanu.studio</a>
+    <footer>
+      <span>&copy; 2026 Mocanu Studio</span>
+      <div class="socials">
+        <a href="#">Instagram</a><a href="#">Behance</a><a href="#">LinkedIn</a>
+      </div>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
